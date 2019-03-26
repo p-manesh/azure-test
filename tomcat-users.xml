@@ -42,5 +42,6 @@
   <user username="tomcat" password="tomcat" roles="manager-gui,manager-script,manager-jmx,manager-status"/>
   <user username="user1" password="user1" roles="admin-gui,admin-script"/>
   <user username="manager1" password="manager1"  roles="admin-gui,admin-script,manager-gui,manager-script,manager-jmx,manager-status"/>
+  <user username="manager2" password="manager2" roles="admin-gui,admin-script,manager-gui,manager-script,manager-jmx,manager-status"/>
 
 </tomcat-users>
