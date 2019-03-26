@@ -16,5 +16,6 @@ steps:
 - script: |
     docker build -f Dockerfile -t $(imageName) .
     docker tag $(imageName) docker.io/pradhanm/tomcat-test
+    docker login -u pradhanm -p Ganesh14 docker.io
     docker push docker.io/pradhanm/tomcat-test
   displayName: 'Tomcat docker build'
