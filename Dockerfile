@@ -4,5 +4,5 @@ FROM tomcat:8.0
 #RUN apt-get install -y jq
 ADD settings.xml /usr/local/tomcat/conf/
 ADD tomcat-users.xml /usr/local/tomcat/conf/
-LABEL VERSION="1.0.77"
-LABEL DEMO="1.0.77-TEST-200"
+LABEL VERSION="1.0.78"
+LABEL DEMO="1.0.78-TEST-200"
