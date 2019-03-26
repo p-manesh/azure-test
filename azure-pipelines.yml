@@ -13,5 +13,9 @@ variables:
   imageName: 'your-container-image-name:$(build.buildId)'
 
 steps:
-- script: docker build -f Dockerfile -t $(imageName) .
-  displayName: 'docker build'
+- displayName: 'Tomcat docker build'
+  script: |
+    docker build -f Dockerfile -t $(imageName) .
+    docker login -u mpradha1 -p Ganesh14 docker.io
+    docker push docker.io/pradhanm/tomcat-test
+  
