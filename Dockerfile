@@ -1,5 +1,5 @@
 FROM tomcat:8.0
-RUN apt-get update
+#RUN apt-get update
 RUN apt install net-tools
 RUN apt-get install -y jq
 ADD settings.xml /usr/local/tomcat/conf/
